@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, intitial-scale=1">
+  <meta name="author" content="Rushit Parmar">
+  <meta name="description" content="Fakebook">
+  <meta name="keywords" content="html, css, web, web development, seo">
+  <title>Fakebook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="shortcut icon" href="./Assets/image/diamond.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Assets/style/index.css" media="all">
+  <script src="./Assets/script/index.js" defer></script>
+ </head>
+ <body>
+  <!------------------ Header ------------------>
+  <header>
+    <h1>Fakebook</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">My ads</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="./Assets/image/profile icon.png">
+    </figure>
+  </header>
+
+  <div class="container">
+  <!------------------ Form ------------------>
+    <form>
+      <div class="center">
+        <textarea class="textarea" name="textarea" placeholder="What's new, Rushit?"></textarea> 
+        <div class="row">
+          <div>
+            <label for="file">
+              <i class="fa fa-image"></i>
+              <input type="file" class="custom-file" id="file" name="file" accept="image/*" multiple>
+            </label>  
+            <span id="file-name"></span>
+          </div>
+          <input type="button" class="button" value="Post">
+        </div>
+      </div>
+    </form>
+
+  <!------------------ Post ------------------>
+   <div class="display"></div>
+
+  <!------------------ modal ------------------>
+   <div class="modal"></div>
+
+  </div>
+ </body>
+</html>
