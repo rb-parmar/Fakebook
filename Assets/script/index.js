@@ -32,7 +32,7 @@ class User {
   get userName() { return this.#userName; }
 
   getInfo() { 
-    let info = `Username: ${this.#userName}\nName: ${this.#name}\nId: ${this.#id}\nEmail: ${this.#email}\n`;
+    let info = `Username: ${this.#userName} <br> Name: ${this.#name} <br> Id: ${this.#id} <br> Email: ${this.#email} <br>`;
     return info;
   }
 }
@@ -60,7 +60,7 @@ class Subscriber extends User {
   get canMonitize() { return this.#canMonitize; }
 
   getInfo() {
-    let info = `${super.getInfo()}\nPages: ${this.#pages}\nGroups: ${this.#groups}\nCan monitize: ${this.monitize()}\n`;
+    let info = `${super.getInfo()} <br> Pages: ${this.#pages} <br> Groups: ${this.#groups} <br> Can monitize: ${this.monitize()}`;
     return info;
   }
 }
